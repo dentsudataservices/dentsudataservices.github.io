@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>DDS</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+	<link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300&display=swap" rel="stylesheet">
+	<style>
+		html,
+		body {
+			margin: 0;
+			overflow: hidden;
+			background-color: rgb(6, 0, 24);
+		}
+
+		.logo {
+			width: 10vw;
+			top: 5%;
+			left: 5%;
+			position: absolute;
+			z-index: 2;
+		}
+
+		.container {
+			left: 5vw;
+			position: absolute;
+			z-index: 2;
+			display: flex;
+			flex-direction: column;
+			height: 100vh;
+			justify-content: center;
+		}
+
+		h1 {
+			letter-spacing: -0.86px;
+			line-height: 1.1;
+			width: 87vw;
+			font-size: 7.5vw;
+			margin: 0;
+		}
+
+		h2 {
+			width: 87vw;
+			font-size: 3.5vw;
+		}
+
+		h1,
+		h2 {
+			font-family: 'Heebo', sans-serif;
+			font-weight: 300;
+			color: #fff;
+
+			padding: 1.5vw;
+			background-color: rgba(0, 0, 0, 0.5);
+			border-radius: 5px;
+		}
+
+		.scene {
+			left: 10%;
+			position: absolute;
+		}
+
+		.tp-dfwv {
+			display: none;
+		}
+
+		@media (min-width: 1024px) {
+			h1 {
+				width: 35vw;
+				font-size: 3.5vw;
+				margin: 2.5vh 0 0 0;
+			}
+
+			h2 {
+				width: 30vw;
+				font-size: 1.25vw;
+			}
+
+			h1,
+			h2 {
+				padding: 0;
+				background-color: transparent;
+				border-radius: 0;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<img class="logo" src="https://www.dentsu.com/assets/images/main-logo-alt.png" />
+	<div class="container">
+		<h1>Innovating the way data-driven solutions are built today.</h1>
+		<h2>We help our clients win, keep and grow their best customers, embracing the potential of disruption and power of
+			data-driven decisions together.</h2>
+	</div>
+	<canvas id="js-canvas" class="scene"></canvas>
+	<script src="js.js" defer></script>
+</body>
+
+</html>
