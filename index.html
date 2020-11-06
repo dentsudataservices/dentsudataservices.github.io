@@ -97,12 +97,6 @@
 	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 	})(window,document,'script','dataLayer','GTM-NWJBNLD');</script>
 	<!-- End Google Tag Manager -->
-	<script>
-		document.getElementById('anders').addEventListener('click', function(){
-			console.log("I consent to cookies!");
-			gtag('consent', 'update', {'analytics_storage': 'granted', 'ad_storage': 'granted'});
-		});
-	</script>
 </head>
 
 <body>
@@ -119,6 +113,12 @@
 	</div>
 	<canvas id="js-canvas" class="scene"></canvas>
 	<script src="js.js" defer></script>
+	<script>
+		document.getElementById('anders').addEventListener('click', function(){
+			console.log("I consent to cookies!");
+			gtag('consent', 'update', {'analytics_storage': 'granted', 'ad_storage': 'granted'});
+		});
+	</script>
 </body>
 
 </html>
