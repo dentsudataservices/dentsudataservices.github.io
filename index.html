@@ -97,6 +97,12 @@
 	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 	})(window,document,'script','dataLayer','GTM-NWJBNLD');</script>
 	<!-- End Google Tag Manager -->
+	<script>
+		document.getElementById('anders').addEventListener('click', function(){
+			console.log("I consent to cookies!");
+			gtag('consent', 'update', {'analytics_storage': 'granted', 'ad_storage': 'granted'});
+		});
+	</script>
 </head>
 
 <body>
@@ -109,6 +115,7 @@
 		<h1>Innovating the way data-driven solutions are built today.</h1>
 		<h2>We help our clients win, keep and grow their best customers, embracing the potential of disruption and power of
 			data-driven decisions together.</h2>
+		<button id="anders">Accept cookies</button>
 	</div>
 	<canvas id="js-canvas" class="scene"></canvas>
 	<script src="js.js" defer></script>
